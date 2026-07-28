@@ -9,12 +9,12 @@ import numpy as np
 from PIL import Image
 from tqdm.auto import tqdm
 
-from blockconditioning.config import PipelineConfig
-from blockconditioning.depth import DA3PointCloudEstimator
-from blockconditioning.descriptions import SalientObjectDescriber
-from blockconditioning.geometry import compute_object_geometry
-from blockconditioning.isolation import KleinObjectIsolator
-from blockconditioning.schemas import (
+from blockcast.config import PipelineConfig
+from blockcast.depth import DA3PointCloudEstimator
+from blockcast.descriptions import SalientObjectDescriber
+from blockcast.geometry import compute_object_geometry
+from blockcast.isolation import KleinObjectIsolator
+from blockcast.schemas import (
     BoundingBox2D,
     DepthResult,
     FrameObjectMetadata,
@@ -25,8 +25,8 @@ from blockconditioning.schemas import (
     ProcessedVideo,
     VideoMetadata,
 )
-from blockconditioning.segmentation import Sam3VideoSegmenter
-from blockconditioning.video import (
+from blockcast.segmentation import Sam3VideoSegmenter
+from blockcast.video import (
     choose_analysis_indices,
     decode_and_preprocess_video,
     list_videos,

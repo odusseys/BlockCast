@@ -7,8 +7,8 @@ import av
 import cv2
 import numpy as np
 
-from blockconditioning.config import VideoConfig
-from blockconditioning.schemas import ProcessedVideo
+from blockcast.config import VideoConfig
+from blockcast.schemas import ProcessedVideo
 
 VIDEO_SUFFIXES = {".mp4", ".mov", ".mkv", ".avi", ".webm", ".m4v"}
 

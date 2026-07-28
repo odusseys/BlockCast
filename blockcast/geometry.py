@@ -3,8 +3,8 @@ from __future__ import annotations
 import cv2
 import numpy as np
 
-from blockconditioning.config import GeometryConfig
-from blockconditioning.schemas import (
+from blockcast.config import GeometryConfig
+from blockcast.schemas import (
     BoundingBox3D,
     DepthResult,
     ObjectGeometry,
@@ -158,4 +158,3 @@ def compute_object_geometry(
             )
         )
     return geometries
-

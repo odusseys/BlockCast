@@ -5,7 +5,7 @@ from collections.abc import Sequence
 import cv2
 import numpy as np
 
-from blockconditioning.schemas import (
+from blockcast.schemas import (
     BoundingBox3D,
     DepthResult,
     IsolatedObject,
@@ -234,4 +234,3 @@ def display_image_pairs(
         axis.axis("off")
     figure.tight_layout()
     return figure
-

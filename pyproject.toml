@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "blockconditioning"
+name = "blockcast"
 version = "0.1.0"
 description = "Video object segmentation, 3D boxes, and FLUX isolation preprocessing."
 readme = "README.md"
@@ -30,8 +30,7 @@ dev = [
 ]
 
 [project.scripts]
-blockconditioning = "blockconditioning.cli:main"
+blockcast = "blockcast.cli:main"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/blockconditioning"]
-
+packages = ["blockcast"]

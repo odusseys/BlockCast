@@ -1,3 +1,5 @@
+"""Data structures shared by the Blockcast pipeline."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass

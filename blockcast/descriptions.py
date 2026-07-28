@@ -7,8 +7,8 @@ import numpy as np
 from openai import OpenAI
 from PIL import Image
 
-from blockconditioning.config import OpenAIConfig
-from blockconditioning.schemas import SalientObjectDescriptions
+from blockcast.config import OpenAIConfig
+from blockcast.schemas import SalientObjectDescriptions
 
 
 def _png_data_url(frame_rgb: np.ndarray) -> str:
@@ -58,4 +58,3 @@ class SalientObjectDescriber:
         if response.output_parsed is None:
             raise RuntimeError("OpenAI returned no parsed object descriptions")
         return response.output_parsed.objects[: self.config.max_objects]
-

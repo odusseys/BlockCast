@@ -1,4 +1,4 @@
-# Block Conditioning
+# Blockcast
 
 A modular PyTorch preprocessing pipeline for turning videos into object tracks,
 per-frame 3D boxes, and isolated object-conditioning images.
@@ -16,7 +16,7 @@ The default output layout is:
 
 ```text
 dataset/
-└── blockconditioning_processed/
+└── blockcast_processed/
     └── example_01/
         ├── first_frame.png
         ├── video.mp4
@@ -93,15 +93,15 @@ The model adapters follow the primary interfaces documented by
 After installing the local project and the model packages:
 
 ```bash
-blockconditioning /absolute/path/to/dataset
+blockcast /absolute/path/to/dataset
 ```
 
 Useful options:
 
 ```bash
-blockconditioning /absolute/path/to/dataset \
+blockcast /absolute/path/to/dataset \
   --device cuda \
-  --output-folder blockconditioning_processed \
+  --output-folder blockcast_processed \
   --video /absolute/path/to/dataset/videos/example_01.mp4
 ```
 

@@ -4,8 +4,8 @@ import argparse
 from dataclasses import replace
 from pathlib import Path
 
-from blockconditioning.config import OutputConfig, PipelineConfig
-from blockconditioning.pipeline import VideoPipeline, build_model_bundle
+from blockcast.config import OutputConfig, PipelineConfig
+from blockcast.pipeline import VideoPipeline, build_model_bundle
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -20,7 +20,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--device", default="cuda")
     parser.add_argument(
         "--output-folder",
-        default="blockconditioning_processed",
+        default="blockcast_processed",
         help="New folder created below the dataset root.",
     )
     parser.add_argument(

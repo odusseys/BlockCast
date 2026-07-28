@@ -7,8 +7,8 @@ from typing import Any
 import numpy as np
 import torch
 
-from blockconditioning.config import Sam3Config
-from blockconditioning.schemas import ObjectTrack
+from blockcast.config import Sam3Config
+from blockcast.schemas import ObjectTrack
 
 
 def torch_dtype(name: str) -> torch.dtype:

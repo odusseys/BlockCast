@@ -62,7 +62,7 @@ class KleinConfig:
 
 @dataclass(frozen=True, slots=True)
 class OutputConfig:
-    folder_name: str = "blockconditioning_processed"
+    folder_name: str = "blockcast_processed"
     video_codec: str = "libx264"
     video_crf: int = 18
 

@@ -5,8 +5,8 @@ from typing import Any
 import numpy as np
 import torch
 
-from blockconditioning.config import DA3Config
-from blockconditioning.schemas import DepthResult
+from blockcast.config import DA3Config
+from blockcast.schemas import DepthResult
 
 
 def _homogeneous_extrinsics(extrinsics: np.ndarray) -> np.ndarray:

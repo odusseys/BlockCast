@@ -6,9 +6,9 @@ import numpy as np
 import torch
 from PIL import Image
 
-from blockconditioning.config import KleinConfig
-from blockconditioning.schemas import IsolatedObject, ObjectGeometry
-from blockconditioning.segmentation import torch_dtype
+from blockcast.config import KleinConfig
+from blockcast.schemas import IsolatedObject, ObjectGeometry
+from blockcast.segmentation import torch_dtype
 
 
 def crop_scale_and_pad(
